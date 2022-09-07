@@ -34,6 +34,15 @@
     "root": "subpkg",
     "pages": [{
       "path": "goods_datil/goods_datil"
+    }, {
+      "path": "goods_list/goods_list",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 150,
+        "backgroundColor": "#eee"
+      }
+
     }]
   }],
   "tabBar": {
@@ -68,7 +77,11 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马优购",
     "navigationBarBackgroundColor": "#C00000",
-    "backgroundColor": "#FFFFFF"
+    "backgroundColor": "#FFFFFF",
+    "usingComponents": {
+      "van-card": "/wxcomponents/vant/card/index"
+    },
+    "ignoreDevUnusedFiles": false
   },
   "uniIdRouter": {}
 }
